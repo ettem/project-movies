@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 
-import Loader from "react-loader-spinner";
+import Loader from "react-loader-spinner"
 
 import { MOVIE_URL } from '../reusables/urls'
 
@@ -29,7 +29,6 @@ const MovieInfo = () => {
         setError(true)
       })
   }, [id])
-  //console.log(movie)
   useEffect(() => {
     if (error) {
       history.push("/")
